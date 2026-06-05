@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans", sans-serif;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* HEADER */
+header {
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+    background-color: white;
+}
+
+#logo {
+    max-width: 5em;
+}
+
+nav {
+    display: none;
+}
+
+#logo-extenso {
+    display: none;
+}
+
+/* INICIO */
+/* fondo inicio */
+#principal {
+    background-image:url(Img/niños_sonrientes.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* titulo + recuadro */
+h1 {
+    background-color: #599dd8;
+    width: 85%;
+    font-size: 4em;
+    font-weight: 100;
+    color: white;
+    margin-bottom: 0.7em;
+}
+
+#textos-principal {
+    padding-top: 30em; /* separacion del header */
+    color: white;
+}
+
+#textos-principal p,
+#textos-principal h2,
+#textos-principal h1 {
+    padding-left: 4rem; /* espacio izq */
+}
+
+/* style h2 inicio*/
+#textos-principal h2 {
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 0.5em;
+}
+/* style p inicio */
+#textos-principal p {
+    font-size: 19px;
+    max-width: 70%;
+    padding-bottom: 10em; /* para no darle height a la pag principal y darle solo cierto espacio post texto */
+}
+
+/* FORMULARIO */
+#formulario {
+    background-color: #599dd8;
+    padding: 4em;
+}
+
+#cajita {
+    background-color: white;
+    padding: 4em;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#cajita form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em; /* entre elementos */
+}
+
+#cajita p {
+    margin-bottom: 2em; /* espacio entre p y form */
+    font-size: 1.2em;
+}
+
+#cajita h2 {
+    font-size: 2.3em;
+    color: #599dd8;
+}
+
+#cajita input,
+#cajita select {
+    padding: 1em;
+    border: 2px solid #599dd8;
+    border-radius: 70px;
+    font-size: 1em;
+    appearance: none; /* tip de chatgpt */
+}
+
+#cajita button {
+    background-color: #599dd8;
+    color: white;
+    border: none;
+    border-radius: 70px;
+    padding: 1em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* GRID */
+#grid {
+    display: grid;
+    gap: 0;
+}
+
+#grid img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+/* imagen con texto arriba */
+#art-verduras {
+    position: relative;
+}
+#textos-verduras {
+    position: absolute;
+    top: 40%;
+    width: 70%;
+    left: 15%;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+#textos-verduras p {
+    margin-bottom: 1em;
+}
+#boton-grid {
+    background-color: #599dd8;
+    color: white;
+    border: none;
+    border-radius: 70px;
+    padding: 0.3em 1em;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+/* imagen que desaparece en celular */
+#imagen-desaparece{
+    display: none;
+}
+
+
+/* ARTICULOS */
+
+#articulos article h4{
+    display: none;
+}
+#contenedor-articulos h2 {
+    font-size: 2.3em;
+    font-weight: 300;
+    color: #599dd8;
+    margin-top: 1.6em;
+    text-align: center;
+}
+#articulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+}
+
+#articulos article {
+    width: 90%;
+    border: 2px solid rgb(66, 66, 66);
+    padding: 0.8em;
+    border-radius: 20px;
+    text-align: center;
+    filter: grayscale(1);
+    transition: 0.3s;
+}
+
+#articulos article img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 2em;
+}
+
+#articulos article h3 {
+    margin-bottom: 0.5em;
+    font-size: 1.7em;
+    font-weight: 100;
+}
+
+#articulos article p {
+    margin-bottom: 1.3em;
+}
+
+#articulos article a {
+    display: inline-block;
+    border: 1px solid #599dd8;
+    color: rgb(39, 39, 39);
+    text-decoration: none;
+    padding: 0.5em 1.5em;
+    border-radius: 50px;
+    margin-bottom: 1.5em;
+}
+
+#articulos article:nth-of-type(4) img,
+#articulos article:nth-of-type(5) img{
+    display: none;
+}
+#articulos article:nth-of-type(4) h3,
+#articulos article:nth-of-type(5) h3{
+    margin-top: 1em;
+}
+
+#articulos article a:hover {
+    display: inline-block;
+    border: 1px solid #599dd8;
+    color: #ffffff;
+    background-color: #599dd8;
+    text-decoration: none;
+    padding: 0.5em 1.5em;
+    border-radius: 50px;
+    margin-bottom: 1.5em;
+    transition: 0.3s;
+}
+
+#articulos article:hover {
+    filter: none;
+}
+/* FOOTER */
+footer {
+    padding: 2em 0;
+    text-align: center;
+    background-color: #599dd8;
+}
+#redes {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+#redes a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+#redes img {
+    width: 40px;
+    object-fit: cover;
+}
+
+/* TABLET */
+@media all and (min-width:768px) { 
+    header {
+        padding: 2em;
+    }
+    #logo {
+        display: none;
+    }
+    nav {
+        display: flex;
+        gap: 1em;
+    }
+    #logo-extenso {
+        display: block;
+    } 
+    #logo-extenso img{
+        width: 80%;
+        height: auto;
+    }
+    #hamburguesa{
+        display: none;
+    }
+    header nav a {
+        display: inline-block;
+        border: 1px solid #599dd8;
+        color: rgb(39, 39, 39);
+        text-decoration: none;
+        padding: 0.5em 1.5em;
+        border-radius: 50px;
+    }
+    header nav a:hover{
+        display: inline-block;
+        border: 1px solid #599dd8;
+        color: white;
+        text-decoration: none;
+        padding: 0.5em 1.5em;
+        border-radius: 50px;
+        background-color: #599dd8;
+        transition: 0.3s;
+    }
+    /* inicio */
+    h1 {
+        font-size: 5.5em;
+    }
+     /* form */
+    #cajita {
+        background-color: white;
+        padding: 2.5em;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #cajita form {
+        display:flex;
+        flex-direction: row;
+        gap: 1em; /* entre elementos */
+        width: 100%;
+    }
+    #cajita input, #cajita select {
+        flex: 1; /* todo el espacio libre que pueda dentro del contenedor flex */
+    }
+    /* grid */
+    #imagen-desaparece {
+        display: block;
+        position: relative;
+    }
+    #imagen-desaparece div{
+        position: absolute;
+        bottom: 2.6em;
+        left: 3em;
+        color: white;
+        width: 65%;
+        font-size: 1.2em;
+    }
+    #imagen-desaparece h3 {
+        font-size: 1.6em;
+        font-weight: 100;
+        margin-bottom: 1em;
+    }
+
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #grid div:nth-of-type(1){
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
+    #grid div:nth-of-type(1) img{
+        aspect-ratio: auto;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    #grid div:nth-of-type(2) {
+        grid-column: 1/3;
+    }
+    #grid div:nth-of-type(2) img{
+        aspect-ratio: 2/1;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #textos-verduras {
+    top: 40%;
+    width: 70%;
+    left: 15%;
+    }
+
+    /* articulos */
+    #articulos article h4{
+        display:none !important;
+    }
+    #articulos{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:0.5em;
+    }
+    #articulos article{
+        width:100%;
+    }
+    #articulos article:nth-of-type(1) {
+        grid-column:1;
+        grid-row:1;
+    }
+    #articulos article:nth-of-type(2) {
+        grid-column:2;
+        grid-row:1;
+    }
+    #articulos article:nth-of-type(3) {
+        grid-column:1;
+        grid-row:2 / span 2;
+    }
+    #articulos article:nth-of-type(4) {
+        grid-column:2;
+        grid-row:2;
+    }
+    #articulos article:nth-of-type(5) {
+        grid-column:2;
+        grid-row:3;
+    }
+}
+/* DESKTOP */
+@media all and (min-width:1024px) {
+    #formulario {
+        position: relative;
+    }
+    #cajita {
+        position: absolute;
+        top: -290px;
+        right: 30px;
+        width: 30%;
+        background-color: white;
+        padding: 1.8em;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #cajita form {
+        display: flex;
+        flex-direction: column;
+        gap: 1em; /* entre elementos */
+    }
+    #cajita p {
+        margin-bottom: 1em; /* espacio entre p y form */
+        font-size: 1.2em;
+    }
+    #principal {
+        height: 80vh;
+    }
+    #textos-principal p {
+        font-size: 2em;
+        max-width: 50%;
+    }
+    #textos-principal h2{
+        font-size: 2em;
+    }
+    h1 {
+        background-color: #599dd8;
+        width: 85%;
+        font-size: 6em;
+        font-weight: 100;
+        color: white;
+        margin-bottom: 0.7em;
+    }
+    #textos-principal {
+        padding-top: 20em; /* separacion del header */
+        color: white;
+    }
+    /* grid */
+    #grid{
+        grid-template-columns: repeat(4,1fr);
+    }
+    #grid div:nth-of-type(1) {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
+    #grid div:nth-of-type(2) { 
+        grid-column: 3 / span 4;
+        grid-row: 1;
+    }
+    #grid img{
+        filter: grayscale(1);
+        transition: 0.3s;
+    }
+    #grid img:hover, #grid div:hover {
+        filter: grayscale(0);
+    }
+    /* article */
+    #articulos{
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:2em;
+    }
+    #articulos article{
+        width:28%;
+        grid-column:unset;
+        grid-row:unset;
+        position: relative;
+        overflow: hidden;
+        position: relative;
+    }
+    #articulos article:nth-of-type(4) img,
+    #articulos article:nth-of-type(5) img{
+    display: block;
+    }
+
+    #articulos article h4{
+        display: block !important;
+        position: absolute;
+        background-color: black;
+        right: 0;
+        top: 2em;
+        padding: 0.4em 1em;
+        color: white;
+        font-weight: 100;
+    }
+    #articulos article:nth-child(1) h4,
+    #articulos article:last-child h4 {
+        background-color: rgb(67, 67, 67);
+    }
+    #articulos article:nth-child(even) h4{
+        background-color: rgb(100, 119, 119);
+    }
+    #articulos article:nth-child(3) h4 {
+        background-color: #a5a5a5;
+    }
+}
